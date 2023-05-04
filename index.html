@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e53bf7a0b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Modal</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <h2 class="logo">Quotes</h2>
+      <div class="right-part">
+        <a href="#" class="quotes-nav">Quotes</a>
+        <a href="#" class="daily-quotes-nav">Daily Quotes</a>
+        <a href="#" class="favorites-nav">Favourites</a>
+        <button type="button" class="button open-modal">Add Quote</button>
+      </div>
+    </nav>
+
+    <div class="modal-container">
+      <div class="modal">
+        <div class="top-part">
+          <h1>Add a Quote</h1>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <form action="" class="add-quote" id="add-quote">
+          <input
+            class="input"
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="text"
+            class="input"
+            name="author"
+            placeholder="Author"
+            required
+          />
+          <input
+            type="text"
+            class="input"
+            name="quote"
+            placeholder="Quote"
+            required
+          />
+          <button type="submit" class="button close-modal">Add Quote</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="quotes"></section>
+    <section class="daily-quotes-sec">
+      Daily Quotes <br />
+      (not yet implemented)
+    </section>
+    <section class="favorites-sec">
+      Favourites <br />
+      (not yet implemented)
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
